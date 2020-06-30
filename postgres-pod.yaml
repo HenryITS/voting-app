@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: postgresdb-pod
+  name: postgres-pod
   labels:
-    name: postgresdb-pod
+    name: postgres-pod
     app: voting-app
 spec:
   containers:
-  - name: postgresdb
+  - name: postgres
     image: postgres:9.4
     ports:
     - containerPort: 5432
